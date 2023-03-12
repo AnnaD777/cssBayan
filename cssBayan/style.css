@@ -61,7 +61,6 @@ input[type="radio"]:checked ~ .accord-btn::after {
     margin-bottom: -0.0625em;
     cursor: pointer;
     position: relative;
-
 }
 
 
