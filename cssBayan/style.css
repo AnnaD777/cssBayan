@@ -8,16 +8,16 @@
 }
 
 .center {
-    max-width: 800px;
-    margin: 5% auto;
-    font-size: 36px;
+    max-width: 40%;
+    margin: 2% auto;
+    font-size: 2.5em;
     font-weight: bolder;
     font-style: italic;
     color: rgb(52, 52, 218);
 }
 
 .header {
-    margin-left: 2%;
+    margin-left: 3%;
 }
 
 .accord-li {
@@ -31,8 +31,8 @@
 }
 
 input[type="radio"]:checked ~ .accord-toggle {
-  max-height: 2500px;
-  transition: 3s;
+  max-height: 15em;
+  transition: 2s;
 }
 
 input[type="radio"]:checked ~ .accord-btn::after {
@@ -50,11 +50,11 @@ input[type="radio"]:checked ~ .accord-btn::after {
 .accord-btn {
   
     display: flex;
-    min-height: 50px;
+    min-height: 0.75em;
     align-items: center;
-    border-top: 1px solid rgb(214, 210, 210);
-    padding: 5px 15px;
-    margin-bottom: -1px;
+    border-top: 0.0625em solid rgb(214, 210, 210);
+    padding: 0.3125em 0.9375em;
+    margin-bottom: -0.0625em;
     cursor: pointer;
     position: relative;
 
@@ -65,12 +65,12 @@ input[type="radio"]:checked ~ .accord-btn::after {
 .accord-btn::after {
     content: '';
     display: block;
-    width: 20px;
-    height: 20px;
+    width: 3%;
+    height: 30%;
     position: absolute;
-    right: 15px;
+    right: 0.5em;
     top: 50%;
-    margin-top: -10px;
+    margin-top: -0.625em;
     transition: 0.3s;
     background-size: contain;
     background-image: url(./icon/plus-solid.svg);
@@ -81,11 +81,11 @@ input[type="radio"]:checked ~ .accord-btn::after {
 
 
 .accord-li {
-    margin-bottom: 20px;
+    margin-bottom: 0.25em;
 }
 
 .accord-togl-inner {
-    padding: 25px 15px;
-    border: 1px 0 1px 0 solid rgb(161, 161, 161);
+    padding: 1.5625em 0.9375em;
+    border: 0.0625em 0 0.0625em 0 solid rgb(161, 161, 161);
 }
 
