@@ -1,0 +1,109 @@
+
+.clearfix::before, .tabs_caption::before, .main-mnu::before, .clearfix::after, .tabs_caption::after, .main-mnu::after {
+    content: "";
+    display: table;
+}
+.clearfix::after, .tabs_caption::after, .main-mnu::after {
+    clear: both;
+}
+
+@font-face {
+    font-family: 'Aleo';
+    src: url("./fonts/Aleo/Aleo-Bold.ttf");
+    font-weight: 700;
+  }
+ 
+  @font-face {
+    font-family: 'Aleo';
+    src: url("./fonts/Aleo/Aleo-Regular.ttf");
+    font-weight: 400;
+  }
+  
+.{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.center {
+    max-width: 800px;
+    margin: 5% auto;
+}
+
+.header {
+    margin-left: 2%;
+}
+
+.accord-li {
+    position: relative;
+}
+
+.accord-li > input[type="radio"] {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+input[type="radio"]:checked ~ .accord-toggle {
+  max-height: 2500px;
+  transition: 3s;
+}
+
+input[type="radio"]:checked ~ .accord-btn::after {
+    background-size: contain;
+    background-image: url(./icon/xmark-solid.svg);
+    background-repeat: no-repeat;
+}
+
+.accord-toggle {
+    max-height: 0;
+    overflow: hidden;
+    transition: 1s;
+}
+
+.accord-btn {
+  
+    display: flex;
+    min-height: 50px;
+    align-items: center;
+    border-top: 1px solid rgb(214, 210, 210);
+    padding: 5px 15px;
+    margin-bottom: -1px;
+    cursor: pointer;
+    position: relative;
+
+}
+
+
+
+.accord-btn::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -10px;
+    transition: 0.3s;
+    background-size: contain;
+    background-image: url(./icon/plus-solid.svg);
+    background-repeat: no-repeat;
+    
+}
+
+
+
+.accord-li {
+    margin-bottom: 20px;
+}
+
+.accord-togl-inner {
+    padding: 25px 15px;
+    border: 1px 0 1px 0 solid rgb(161, 161, 161);
+}
+
+.img {
+position: relative;
+}
