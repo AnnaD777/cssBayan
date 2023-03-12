@@ -7,28 +7,13 @@
     clear: both;
 }
 
-@font-face {
-    font-family: 'Aleo';
-    src: url("./fonts/Aleo/Aleo-Bold.ttf");
-    font-weight: 700;
-  }
- 
-  @font-face {
-    font-family: 'Aleo';
-    src: url("./fonts/Aleo/Aleo-Regular.ttf");
-    font-weight: 400;
-  }
-  
-.{
-    margin: 0;
-    padding: 0;
-    outline: none;
-    box-sizing: border-box;
-}
-
 .center {
     max-width: 800px;
     margin: 5% auto;
+    font-size: 36px;
+    font-weight: bolder;
+    font-style: italic;
+    color: rgb(52, 52, 218);
 }
 
 .header {
@@ -104,6 +89,3 @@ input[type="radio"]:checked ~ .accord-btn::after {
     border: 1px 0 1px 0 solid rgb(161, 161, 161);
 }
 
-.img {
-position: relative;
-}
